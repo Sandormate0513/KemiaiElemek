@@ -41,6 +41,16 @@ public class Felfedezesek {
     public String getFelf() {
         return felf;
     }
+
+    @Override
+    public String toString() {
+        String txt = "\tAz elem vegyjele: " + vj+
+                   "\n\tAz elem neve: " + nev +
+                   "\n\tRendszáma: " + rsz +
+                   "\n\tFelfesezési éve: " + ev +
+                   "\n\tFelfesező: " + felf;
+        return txt;
+    }
     
     
     
