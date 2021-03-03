@@ -31,6 +31,8 @@ public class Kemia {
 
     private void feladatok() throws IOException {
        beolvas();
+        feladat3();
+	feladat4();
        feladat5();
        feladat6();
        felatat8();
@@ -44,6 +46,29 @@ public class Kemia {
             String sor = sorok.get(i);
             elemek.add(new Felfedezesek(sor));
         }
+    }
+
+	private void feladat4() {
+        int i=0;
+        
+        while(i<sorok.size() && elemek.get(i).getEv().equals("Ókor"))
+        {
+            if(elemek.get(i).getEv().equals("Ókor"))
+            {
+                i++;
+            }
+        }
+        System.out.println("4. feladat: Felfedezések száma az ókorban:"+i);
+    }
+
+    private void feladat3() {
+        int elemszam=0;
+        for (int i = 1; i < sorok.size(); i++)
+        {
+            elemszam++;
+        }
+        
+        System.out.println("3. feladat: Elemek száma:"+elemszam);
     }
 
     private void feladat5() {
