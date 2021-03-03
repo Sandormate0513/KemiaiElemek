@@ -27,7 +27,7 @@ public class Kemia {
 
     private void feladatok() throws IOException {
        beolvas();
-
+       //feladat5
        
     }
 
