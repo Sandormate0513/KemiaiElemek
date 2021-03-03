@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -32,7 +33,7 @@ public class Kemia {
        beolvas();
        feladat5();
        feladat6();
-       
+       felatat8();
        
     }
 
@@ -76,6 +77,21 @@ public class Kemia {
         {
             System.out.println("nincs ilyen elem az adatforrásban!");
         }
+    }
+
+    private void felatat8() {
+        HashMap<String,Integer> evekFelfdb = new HashMap<>();
+        for (Felfedezesek elem : elemek) {
+            String ev = elem.getEv(); 
+//            if(evekFelfdb.containsKey(ev))
+//            {
+                //evekFelfdb.get(ev).
+//            }
+//            else
+//            evekFelfdb.put(ev, 1);
+        }
+        System.out.println("8.feadat: Statisztika");
+        
     }
     
 }
